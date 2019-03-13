@@ -12,6 +12,8 @@
  
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
+
+fastlane_version "2.104.0"
  
 default_platform(:ios)
  
