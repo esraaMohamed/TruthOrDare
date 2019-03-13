@@ -16,31 +16,12 @@
 default_platform(:ios)
  
 platform :ios do
-  desc "Description of what the lane does"
-  lane :CI do
-      build_app(project: "TruthOrDare.xcodeproj",
-      devices: ["iPhone 7"],
-      scheme: "TruthOrDare")
+  desc "Runs all the tests"
+  lane :test do
+    scan(
+      workspace: "TruthOrDare.xcworkspace",
+      scheme: "TruthOrDare",
+      devices: ["iPhone 7"]
+    )
   end
- 
-lane :beta do
-  scan
-  gym(scheme: "TruthOrDare")
-end
-
-  lane :CD do |values|
- 
-    gym(scheme: 'TruthOrDare', project: "TruthOrDare.xcodeproj", clean: true, silent: true, include_bitcode: false, export_method: 'ad-hoc')
- 
-    emails = values[:test_email] ? values[:test_email] : ['[email]'] # You can list more emails here
-    groups = values[:test_email] ? nil : nil # You can define groups on the web and reference them here
- 
-    crashlytics(api_token: 'e6ae787295af774a1b72b0a7843e0dab56602e03',
-             build_secret: '8bdf8c8f50ecb22bb41583da5ac7add905c472e0f817a5899cefaf6a232b8a44',
-                   emails: emails,
-                   groups: groups,
-                    notes: 'Distributed with fastlane', # Check out the changelog_from_git_commits action
-            notifications: true) # Should this distribution notify your testers via email?
- 
-    end
 end
