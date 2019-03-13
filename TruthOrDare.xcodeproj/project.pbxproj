@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E87AFD033D8760F0A1DF623 /* libPods-TruthOrDare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7829F44A80C6BFDEC0FDA641 /* libPods-TruthOrDare.a */; };
 		AB654D7D212D686700080E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D7C212D686700080E76 /* AppDelegate.swift */; };
 		AB654D7F212D686700080E76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D7E212D686700080E76 /* ViewController.swift */; };
 		AB654D82212D686700080E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB654D80212D686700080E76 /* Main.storyboard */; };
@@ -45,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		37ED21A03AAB5F9523786A5F /* Pods-TruthOrDare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDare.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDare/Pods-TruthOrDare.release.xcconfig"; sourceTree = "<group>"; };
+		7829F44A80C6BFDEC0FDA641 /* libPods-TruthOrDare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TruthOrDare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB654D79212D686700080E76 /* TruthOrDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthOrDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB654D7C212D686700080E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB654D7E212D686700080E76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		ABAF8A5E21303418001DA576 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Carthage/Build/iOS/Fabric.framework; sourceTree = SOURCE_ROOT; };
 		ABAF8A6D2130372C001DA576 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		ABAF8A6E2130372C001DA576 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		F40C149374DD6DDEF466BB48 /* Pods-TruthOrDare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDare/Pods-TruthOrDare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			files = (
 				ABAF8A6121303418001DA576 /* Crashlytics.framework in Frameworks */,
 				ABAF8A6221303418001DA576 /* Fabric.framework in Frameworks */,
+				8E87AFD033D8760F0A1DF623 /* libPods-TruthOrDare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		518E3A5A1CC3ACD053EC9402 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F40C149374DD6DDEF466BB48 /* Pods-TruthOrDare.debug.xcconfig */,
+				37ED21A03AAB5F9523786A5F /* Pods-TruthOrDare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AB654D70212D686700080E76 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +105,7 @@
 				AB654D93212DA86400080E76 /* TruthOrDareTests */,
 				ABAF8A5B21303403001DA576 /* Frameworks */,
 				AB654D7A212D686700080E76 /* Products */,
+				518E3A5A1CC3ACD053EC9402 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +146,7 @@
 			children = (
 				ABAF8A5D21303418001DA576 /* Crashlytics.framework */,
 				ABAF8A5E21303418001DA576 /* Fabric.framework */,
+				7829F44A80C6BFDEC0FDA641 /* libPods-TruthOrDare.a */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -142,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB654D8B212D686900080E76 /* Build configuration list for PBXNativeTarget "TruthOrDare" */;
 			buildPhases = (
+				9AA4AB6C08635FE232F6A73B /* [CP] Check Pods Manifest.lock */,
 				AB654D75212D686700080E76 /* Sources */,
 				AB654D76212D686700080E76 /* Frameworks */,
 				AB654D77212D686700080E76 /* Resources */,
@@ -234,6 +251,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9AA4AB6C08635FE232F6A73B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TruthOrDare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ABAF8A662130348E001DA576 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,7 +284,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/Carthage/Build/iOS/Fabric.framework/run\" ccecd894afb473edc8152a03eea12a134cb9e970 4094f91a9ae4c861e895e9a7864c533e471ca4a85ec8ba6ea45082a6bc16422e";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e6ae787295af774a1b72b0a7843e0dab56602e03 8bdf8c8f50ecb22bb41583da5ac7add905c472e0f817a5899cefaf6a232b8a44\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -333,6 +372,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -355,6 +395,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 			};
 			name = Debug;
 		};
@@ -393,6 +434,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -408,12 +450,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		AB654D8C212D686900080E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40C149374DD6DDEF466BB48 /* Pods-TruthOrDare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -439,6 +483,7 @@
 		};
 		AB654D8D212D686900080E76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37ED21A03AAB5F9523786A5F /* Pods-TruthOrDare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
